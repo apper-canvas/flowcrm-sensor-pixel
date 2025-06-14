@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Enterprise Software License",
+    "contactId": "1",
+    "value": 75000,
+    "stage": "negotiation",
+    "probability": 70,
+    "closeDate": "2024-04-15T00:00:00Z",
+    "createdAt": "2024-02-01T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Annual Support Contract",
+    "contactId": "3",
+    "value": 32000,
+    "stage": "prospect",
+    "probability": 30,
+    "closeDate": "2024-04-30T00:00:00Z",
+    "createdAt": "2024-02-15T14:30:00Z"
+  },
+  {
+    "id": "3",
+    "name": "Cloud Migration Services",
+    "contactId": "2",
+    "value": 125000,
+    "stage": "negotiation",
+    "probability": 65,
+    "closeDate": "2024-05-20T00:00:00Z",
+    "createdAt": "2024-01-20T09:15:00Z"
+  },
+  {
+    "id": "4",
+    "name": "Training Package",
+    "contactId": "4",
+    "value": 18000,
+    "stage": "closed",
+    "probability": 100,
+    "closeDate": "2024-03-10T00:00:00Z",
+    "createdAt": "2024-01-30T11:45:00Z"
+  },
+  {
+    "id": "5",
+    "name": "Custom Development",
+    "contactId": "5",
+    "value": 95000,
+    "stage": "prospect",
+    "probability": 25,
+    "closeDate": "2024-06-15T00:00:00Z",
+    "createdAt": "2024-02-28T13:20:00Z"
+  }
+]

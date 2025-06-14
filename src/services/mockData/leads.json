@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "contactId": "2",
+    "source": "Website",
+    "status": "new",
+    "value": 15000,
+    "probability": 25,
+    "createdAt": "2024-03-01T09:30:00Z"
+  },
+  {
+    "id": "2",
+    "contactId": "1",
+    "source": "Referral",
+    "status": "qualified",
+    "value": 28000,
+    "probability": 60,
+    "createdAt": "2024-02-25T14:15:00Z"
+  },
+  {
+    "id": "3",
+    "contactId": "3",
+    "source": "Cold Call",
+    "status": "contacted",
+    "value": 45000,
+    "probability": 40,
+    "createdAt": "2024-02-28T11:45:00Z"
+  },
+  {
+    "id": "4",
+    "contactId": "5",
+    "source": "Trade Show",
+    "status": "new",
+    "value": 12000,
+    "probability": 20,
+    "createdAt": "2024-03-05T16:20:00Z"
+  },
+  {
+    "id": "5",
+    "contactId": "4",
+    "source": "LinkedIn",
+    "status": "converted",
+    "value": 35000,
+    "probability": 90,
+    "createdAt": "2024-02-18T10:10:00Z"
+  }
+]

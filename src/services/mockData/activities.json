@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "contactId": "1",
+    "type": "email",
+    "description": "Sent proposal for enterprise software license",
+    "timestamp": "2024-03-10T14:22:00Z",
+    "metadata": {
+      "subject": "Enterprise License Proposal - TechCorp Solutions",
+      "status": "sent"
+    }
+  },
+  {
+    "id": "2",
+    "contactId": "2",
+    "type": "call",
+    "description": "Discovery call - discussed cloud migration needs",
+    "timestamp": "2024-03-08T16:45:00Z",
+    "metadata": {
+      "duration": "45 minutes",
+      "outcome": "positive"
+    }
+  },
+  {
+    "id": "3",
+    "contactId": "3",
+    "type": "meeting",
+    "description": "Product demo presentation",
+    "timestamp": "2024-03-12T13:10:00Z",
+    "metadata": {
+      "location": "Client office",
+      "attendees": 4
+    }
+  },
+  {
+    "id": "4",
+    "contactId": "4",
+    "type": "email",
+    "description": "Shared training package details",
+    "timestamp": "2024-03-11T10:30:00Z",
+    "metadata": {
+      "subject": "Training Package Information",
+      "status": "opened"
+    }
+  },
+  {
+    "id": "5",
+    "contactId": "5",
+    "type": "call",
+    "description": "Initial contact - introduced company services",
+    "timestamp": "2024-03-09T12:15:00Z",
+    "metadata": {
+      "duration": "20 minutes",
+      "outcome": "interested"
+    }
+  },
+  {
+    "id": "6",
+    "contactId": "1",
+    "type": "note",
+    "description": "Customer expressed interest in additional modules",
+    "timestamp": "2024-03-09T09:30:00Z",
+    "metadata": {
+      "priority": "high",
+      "follow_up": true
+    }
+  }
+]

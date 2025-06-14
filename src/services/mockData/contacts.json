@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@techcorp.com",
+    "phone": "+1 (555) 123-4567",
+    "company": "TechCorp Solutions",
+    "position": "Marketing Director",
+    "status": "active",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "lastContact": "2024-03-10T14:22:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Michael Chen",
+    "email": "m.chen@innovateplus.com",
+    "phone": "+1 (555) 234-5678",
+    "company": "InnovatePlus",
+    "position": "CEO",
+    "status": "prospect",
+    "createdAt": "2024-02-03T09:15:00Z",
+    "lastContact": "2024-03-08T16:45:00Z"
+  },
+  {
+    "id": "3",
+    "name": "Emily Rodriguez",
+    "email": "emily.r@globalventures.co",
+    "phone": "+1 (555) 345-6789",
+    "company": "Global Ventures",
+    "position": "VP of Sales",
+    "status": "qualified",
+    "createdAt": "2024-01-28T11:20:00Z",
+    "lastContact": "2024-03-12T13:10:00Z"
+  },
+  {
+    "id": "4",
+    "name": "David Kim",
+    "email": "david.kim@nexustech.io",
+    "phone": "+1 (555) 456-7890",
+    "company": "Nexus Technologies",
+    "position": "CTO",
+    "status": "active",
+    "createdAt": "2024-02-12T08:45:00Z",
+    "lastContact": "2024-03-11T10:30:00Z"
+  },
+  {
+    "id": "5",
+    "name": "Lisa Thompson",
+    "email": "lisa.thompson@brightfuture.com",
+    "phone": "+1 (555) 567-8901",
+    "company": "Bright Future Industries",
+    "position": "Operations Manager",
+    "status": "prospect",
+    "createdAt": "2024-02-20T15:30:00Z",
+    "lastContact": "2024-03-09T12:15:00Z"
+  }
+]

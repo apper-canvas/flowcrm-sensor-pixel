@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "Follow up on proposal",
+    "description": "Call Sarah to discuss the enterprise license proposal and address any concerns",
+    "contactId": "1",
+    "dueDate": "2024-03-15T10:00:00Z",
+    "priority": "high",
+    "status": "pending",
+    "assignedTo": "Sales Rep"
+  },
+  {
+    "id": "2",
+    "title": "Send technical documentation",
+    "description": "Email technical specs for cloud migration to Michael Chen",
+    "contactId": "2",
+    "dueDate": "2024-03-12T15:30:00Z",
+    "priority": "medium",
+    "status": "pending",
+    "assignedTo": "Sales Rep"
+  },
+  {
+    "id": "3",
+    "title": "Schedule demo",
+    "description": "Arrange product demonstration for Emily's team next week",
+    "contactId": "3",
+    "dueDate": "2024-03-14T09:00:00Z",
+    "priority": "high",
+    "status": "completed",
+    "assignedTo": "Sales Rep"
+  },
+  {
+    "id": "4",
+    "title": "Contract review",
+    "description": "Review and finalize support contract terms with David",
+    "contactId": "4",
+    "dueDate": "2024-03-16T14:00:00Z",
+    "priority": "medium",
+    "status": "pending",
+    "assignedTo": "Sales Rep"
+  },
+  {
+    "id": "5",
+    "title": "Qualification call",
+    "description": "Initial discovery call with Lisa to understand requirements",
+    "contactId": "5",
+    "dueDate": "2024-03-13T11:00:00Z",
+    "priority": "low",
+    "status": "pending",
+    "assignedTo": "Sales Rep"
+  }
+]
