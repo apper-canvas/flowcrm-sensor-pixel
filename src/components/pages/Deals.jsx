@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'react-toastify';
 import Button from '@/components/atoms/Button';
 import LoadingState from '@/components/molecules/LoadingState';
 import ErrorState from '@/components/molecules/ErrorState';
 import EmptyState from '@/components/molecules/EmptyState';
 import DealPipeline from '@/components/organisms/DealPipeline';
+import DealForm from '@/components/organisms/DealForm';
 import { dealService } from '@/services';
 
 const Deals = () => {
@@ -13,7 +14,7 @@ const Deals = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [viewMode, setViewMode] = useState('pipeline'); // 'pipeline' or 'list'
-
+  const [showForm, setShowForm] = useState(false);
   useEffect(() => {
     loadDeals();
   }, []);
@@ -30,6 +31,11 @@ const Deals = () => {
     } finally {
       setLoading(false);
     }
+};
+
+  const handleDealSaved = async (savedDeal) => {
+    setShowForm(false);
+    await loadDeals(); // Refresh the deals list
   };
 
   const formatCurrency = (amount) => {
@@ -132,10 +138,10 @@ const Deals = () => {
               </button>
             </div>
             
-            <Button
+<Button
               variant="primary"
               icon="Plus"
-              onClick={() => toast.info('Deal creation form coming soon')}
+              onClick={() => setShowForm(true)}
             >
               Add Deal
             </Button>
@@ -147,12 +153,12 @@ const Deals = () => {
       <div className="flex-1 overflow-hidden">
         {deals.length === 0 ? (
           <div className="p-6">
-            <EmptyState
+<EmptyState
               icon="Handshake"
               title="No deals yet"
               description="Start tracking your sales opportunities by adding deals to your pipeline"
               actionLabel="Add Deal"
-              onAction={() => toast.info('Deal creation form coming soon')}
+              onAction={() => setShowForm(true)}
             />
           </div>
         ) : (
@@ -176,7 +182,30 @@ const Deals = () => {
             )}
           </motion.div>
         )}
+)}
       </div>
+
+      {/* Deal Form Modal */}
+      <AnimatePresence>
+        {showForm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                setShowForm(false);
+              }
+            }}
+          >
+            <DealForm
+              onSave={handleDealSaved}
+              onCancel={() => setShowForm(false)}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
