@@ -99,34 +99,34 @@ const Dashboard = () => {
       color: 'text-success',
       bgColor: 'bg-success/10'
     },
-    {
+{
       title: 'Conversion Rate',
-      value: `${metrics.conversionRate.toFixed(1)}%`,
+      value: `${(metrics.conversionRate || 0).toFixed(1)}%`,
       icon: 'Target',
       color: 'text-secondary',
       bgColor: 'bg-secondary/10'
     },
     {
       title: 'Total Contacts',
-      value: metrics.totalContacts.toString(),
+      value: (metrics.totalContacts || 0).toString(),
       icon: 'Users',
       color: 'text-info',
       bgColor: 'bg-info/10'
     },
     {
       title: 'Active Deals',
-      value: metrics.totalDeals.toString(),
+      value: (metrics.totalDeals || 0).toString(),
       icon: 'Handshake',
       color: 'text-accent',
       bgColor: 'bg-accent/10'
     },
     {
       title: 'Pending Tasks',
-      value: metrics.pendingTasks.toString(),
-      subtitle: `${metrics.overdueTasksCount} overdue`,
+      value: (metrics.pendingTasks || 0).toString(),
+      subtitle: `${metrics.overdueTasksCount || 0} overdue`,
       icon: 'CheckSquare',
-      color: metrics.overdueTasksCount > 0 ? 'text-warning' : 'text-gray-600',
-      bgColor: metrics.overdueTasksCount > 0 ? 'bg-warning/10' : 'bg-gray-100'
+      color: (metrics.overdueTasksCount || 0) > 0 ? 'text-warning' : 'text-gray-600',
+      bgColor: (metrics.overdueTasksCount || 0) > 0 ? 'bg-warning/10' : 'bg-gray-100'
     }
   ];
 
